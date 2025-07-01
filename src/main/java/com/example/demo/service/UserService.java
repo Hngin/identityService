@@ -57,6 +57,9 @@ public class UserService {
     }
 
     public void deleteUser(String id) {
-        userRepository.deleteById(id);
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new AppException(ErrorCode.USER_NOT_FOUND));
+
+        userRepository.delete(user);
     }
 }
