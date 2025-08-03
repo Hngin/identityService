@@ -1,13 +1,13 @@
-package com.example.demo.service;
+package com.identity.service.service;
 
-import com.example.demo.dto.request.UserCreationRequest;
-import com.example.demo.dto.request.UserUpdateRequest;
-import com.example.demo.dto.response.UserResponse;
-import com.example.demo.entity.User;
-import com.example.demo.exception.AppException;
-import com.example.demo.exception.ErrorCode;
-import com.example.demo.mapper.UserMapper;
-import com.example.demo.repository.UserRepository;
+import com.identity.service.dto.request.UserCreationRequest;
+import com.identity.service.dto.request.UserUpdateRequest;
+import com.identity.service.dto.response.UserResponse;
+import com.identity.service.entity.User;
+import com.identity.service.exception.AppException;
+import com.identity.service.exception.ErrorCode;
+import com.identity.service.mapper.UserMapper;
+import com.identity.service.repository.UserRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
