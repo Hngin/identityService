@@ -1,10 +1,9 @@
-package com.example.demo.mapper;
+package com.identity.service.mapper;
 
-import com.example.demo.dto.request.UserCreationRequest;
-import com.example.demo.dto.request.UserUpdateRequest;
-import com.example.demo.dto.response.UserResponse;
-import com.example.demo.entity.User;
-import com.example.demo.repository.UserRepository;
+import com.identity.service.dto.request.UserCreationRequest;
+import com.identity.service.dto.request.UserUpdateRequest;
+import com.identity.service.dto.response.UserResponse;
+import com.identity.service.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 

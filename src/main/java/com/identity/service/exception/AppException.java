@@ -1,4 +1,4 @@
-package com.example.demo.exception;
+package com.identity.service.exception;
 
 public class AppException extends RuntimeException  {
 

@@ -1,5 +1,8 @@
-package com.example.demo.exception;
+package com.identity.service.exception;
 
+import lombok.Getter;
+
+@Getter
 public enum ErrorCode {
     USERNAME_INVALID(1003, "Username must be at least 5 characters"),
     USER_NOT_FOUND(404, "User not found"),
@@ -16,12 +19,4 @@ public enum ErrorCode {
 
     private int code;
     private String message;
-
-    public int getCode() {
-        return code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
 }

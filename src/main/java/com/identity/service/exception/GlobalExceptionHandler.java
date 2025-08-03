@@ -1,12 +1,10 @@
-package com.example.demo.exception;
+package com.identity.service.exception;
 
-import com.example.demo.dto.request.ApiResponse;
-import jakarta.validation.constraints.Size;
+import com.identity.service.dto.request.ApiResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
@@ -41,14 +39,12 @@ public class GlobalExceptionHandler {
         try {
             errorCode = ErrorCode.valueOf(enumKey);
         } catch (IllegalArgumentException e){
-
         }
 
         ApiResponse apiResponse=new ApiResponse<>();
 
         apiResponse.setCode(errorCode.getCode());
         apiResponse.setMessage(errorCode.getMessage());
-
 
         return ResponseEntity.badRequest().body(apiResponse);
     }
